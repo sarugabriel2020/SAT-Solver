@@ -1,30 +1,36 @@
-# SAT-Solver --- THE MATRIX REPRESENTATION OF THE CNF FORMULA
+# SAT - Solver  
+# THE MATRIX REPRESENTATION OF THE CNF FORMULA
 
---- Project objectives ---
+## The Importance
 
--->The objectives are to implement in Python an algorithm for solving the SAT problem, determining the execution times for them and creating a simple graph to illustrate the complexity of the algorithm.
+• **SAT** was the first problem discovered to be NP-complete, thanks to the Cook-Levin theorem.
+  As a result, it was studied for a long time, discovering many heuristic algorithms that can find (most often) valid configurations in polynomial time,despite the fact that it is not yet known whether or not there is an exact algorithm that solves SAT in polynomial time.
 
-The algorithm uses the matrix form to represent a formula.
-In the matrix, the rows correspond to the clauses in the formula, and the columns to the variables.
-Each variable can be:
+• These **solvers** are very very useful for many other problems for which, in the same way, that no effective solutions have been formulated-usually also NP-Complete Problems , because we can reduce them polynomially to **SAT** .
+
+## Objective
+
+• The objective was to implement in Python an algorithm for solving the Boolean Satisfiability Problem , more exactly the SAT problem, determining the execution times for them and creating a simple graph to illustrate the complexity of the algorithm.
+
+## The Algorithm CNF - SAT
+
+- The algorithm uses the Matrix form to represent a formula.
+- In the matrix , the **rows** correspond to **the clauses in the formula**, and **the columns** to **the variables** .
+
+- Each variable can be:
   (i)   not appear in a clause,
   (ii)  appear without denial,
   (iii) appear negative.
-  
+ 
+## Mention
+
 To find an interpretation, the algorithm will have a "backtracking" approach over all possible interpretations.
-------------------------------------------------------------
-          ------ IMPORTANCE -----------
 
-  •• SAT was the first problem discovered to be NP-complete, thanks to the theorem Cook-Levin.
-  
-  •• As a result, it has been studied for a long time, with many being discovered heuristic algorithms that can find (most of the time) valid configurations in time polynomial, despite the fact that it is not yet known whether or not there is an exact algorithm
-to solve SAT in polynomial time. 
+## The Implementation
 
-  •• These solvers are very useful in the case of many other problems for which, in the same way, that no effective solutions have been formulated - by usually also NP-complete problems - because we can reduce them polynomially to SAT.
+• In this project, I implemented the following functions :
 
-------------------------------------------------------------
-
-In this project, we started in code by defining the function:
+### Part 1
 
 - def solve (fnc) -> which receives as a parameter the formula in natural conjunctive form, and in this function we first create a list of literals.
 
@@ -46,7 +52,11 @@ In this project, we started in code by defining the function:
 
 • If the interpreter is False, we display 0.
 
+### Part 2
+
 -def interare (nr_element, literals) -> which receives as parameter the number of elements, and literals, and this function performs the exhaustive search over all interpretations.
+
+### Part 3
 
 -def sat_solver_algorithm ():
 
