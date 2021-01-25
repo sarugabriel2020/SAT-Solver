@@ -30,9 +30,9 @@ To find an interpretation, the algorithm will have a "backtracking" approach ove
 
 • In this project, I implemented the following functions :
 
-### Part 1
+### ***Part 1***
 
-- def solve (fnc) -> which receives as a parameter the formula in natural conjunctive form, and in this function we first create a list of literals.
+- ***def solve (fnc)*** -> which receives as a parameter the formula in natural conjunctive form, and in this function we first create a list of literals.
 
 • Then we search iteratively through the formula in the natural conjunctive form if there is a literal negated m and if there is, we will replace it with '', and at the same time we separate by the character V.
 
@@ -52,16 +52,21 @@ To find an interpretation, the algorithm will have a "backtracking" approach ove
 
 • If the interpreter is False, we display 0.
 
-### Part 2
+### ***Part 2***
 
--def interare (nr_element, literals) -> which receives as parameter the number of elements, and literals, and this function performs the exhaustive search over all interpretations.
+- ***def interare (nr_element, literals)*** -> which receives as parameter the number of elements, and literals, and this function performs the exhaustive search over all interpretations.
 
-### Part 3
+### ***Part 3***
 
--def sat_solver_algorithm ():
+- ***def sat_solver_algorithm ()***
 
   • In this function we read the respective formula in the input
   
   • Put in fnc the read input in which we replace the parentheses with '' and divide after the input.
   
   • Call the solve function (fnc)
+  
+### The Graph Times
+• We can see from the graph that when the execution times were plotted, and what we want to observe from this graph is how the time required to find an interpretation increases ***(exponentially)*** as the number of variables increases.
+
+![](Grafic_Basic_FNC.jpg)  
