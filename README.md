@@ -26,6 +26,27 @@
 
 To find an interpretation, the algorithm will have a "backtracking" approach over all possible interpretations.
 
+## INPUT Codification 
+
+The formulas will be provided in the Conjunctive Normal Form(CNF), and their coding will be given by strings with the following specifications:
+
+● Variables will be encoded as integers (Attention, integers can have multiple digits);
+● Negation will be encoded using the ‘~’ character
+● The disjunction will be encoded using the ‘V’ character (uppercase V)
+● The conjunction will be encoded using the character ‘^’
+
+- An example of input string :
+
+***(11V2V ~ 30)^(2V30V11)^(11V30)^(~ 2V11)***
+
+- This contains 4 clauses: the first two clauses have 3 literals, and the last two clauses have two literals.(And the variables are 11 , 2 ,30)
+
+## OUTPUT Codification
+
+The program will need to calculate the value of satisfiability of the expression ‘1’ or ‘0’, where:
+-> ‘1’ represents that the expression is satisfiabilty,
+-> and ‘0’ otherwise.
+
 ## The Implementation
 
 • In this project, I implemented the following functions :
