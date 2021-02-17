@@ -14,13 +14,13 @@
 
 ## The Algorithm CNF - SAT
 
-- The algorithm uses the Matrix form to represent a formula.
-- In the matrix , the **rows** correspond to **the clauses in the formula**, and **the columns** to **the variables** .
+- The algorithm uses the Matrix form to represent a formula;
+- In the matrix , the **rows** correspond to **the clauses in the formula**, and **the columns** to **the variables** ;
 
 - Each variable can be:
-  (i)   not appear in a clause,
-  (ii)  appear without denial,
-  (iii) appear negative.
+  (i)   not appear in a clause;
+  (ii)  appear without denial;
+  (iii) appear negative;
  
 ## Mention
 
