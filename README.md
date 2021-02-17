@@ -31,9 +31,12 @@ To find an interpretation, the algorithm will have a "backtracking" approach ove
 The formulas will be provided in the Conjunctive Normal Form(CNF), and their coding will be given by strings with the following specifications:
 
 ● Variables will be encoded as integers (Attention, integers can have multiple digits);
-● Negation will be encoded using the ‘~’ character
-● The disjunction will be encoded using the ‘V’ character (uppercase V)
-● The conjunction will be encoded using the character ‘^’
+
+● Negation will be encoded using the ‘~’ character;
+
+● The disjunction will be encoded using the ‘V’ character (uppercase V);
+
+● The conjunction will be encoded using the character ‘^’;
 
 - An example of input string :
 
